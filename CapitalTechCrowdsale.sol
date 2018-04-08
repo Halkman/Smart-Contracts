@@ -75,7 +75,7 @@ contract Crowdsale {
   function Crowdsale(address _token_call, address _token_callg) public nonZeroAddress(_token_call) nonZeroAddress(_token_callg) {
     token_call = Token(_token_call);
     token_callg = Token(_token_callg);
-    fiat_contract = FiatContract(0x2CDe56E5c8235D6360CCbb0c57Ce248Ca9C80909);
+    fiat_contract = FiatContract(0x8055d0504666e2B6942BeB8D6014c964658Ca591);
   }
   function calculateRate(uint256 _amount) public view returns(uint256) {
         uint256 tokenPrice = fiat_contract.USD(0);
