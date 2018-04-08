@@ -9,7 +9,8 @@ It’s a token contract that follows ERC20 standard, it it initialises with this
 ```
 “initial supply”, “token name”, “token symbol”
 ```
-In our case: "52500000", "CAPITAL", "CALL" according to the Crowdsale Whitepaper
+In our case: "52500000", "CAPITAL", "CALL" according to the Crowdsale Whitepaper.
+
 After mint is over it is transferred to the owner address.
 
 ## CALLGTOKEN.sol 
@@ -17,21 +18,25 @@ It’s a token contract that follows ERC20 standard, it initialises with this pa
 ```
 “initial supply”, “token name”, “token symbol”
 ```
-In our case: "10500000000", "CAPITAL GAS", "CALLG" according to the Crowdsale Whitepaper
+In our case: "10500000000", "CAPITAL GAS", "CALLG" according to the Crowdsale Whitepaper.
+
 After mint is over it is transferred to the owner address.
 
 ## CapitalTechCrowdsale.sol
+The parity of the tokens is as follows: `1 CALL = 200 CALLG`.
+
 It’s a crowdsale contract with custom parameters, it’s initialised with these parameters: 
 ```
 “storage wallet”, “CALLToken Contract address”, “CALLGToken Contract address”.
 ```
-The contract has refund capabilities, user funds invested into the contract can be easily extracted back by them by calling the claimRefund() public function, but only if the Soft cap(90% tokens sold) is not reached and if the sale is over.
-The parity of the tokens is as follows: `1 CALL = 200 CALLG`.
+The contract has refund capabilities, user funds invested into the contract can be easily extracted back by them by calling the claimRefund() public function, but only if the soft cap (90% tokens sold) is not reached and if the sale is over.
 
 If a user buys `1 CALL`, he automatically receives `1 CALL` and `200 CALLG` tokens.
+
 The price of tokens calculates with the help of a public Fiat Contract.
 
 The crowdsale split as follows:
+
 Presale stage has 15 days, and the price of `1 CALL & 200` CALLG is 1.5$
 
 The pre-ico stage has 30 days, and the cost of `1 CALL & 200` CALLG is 2$
