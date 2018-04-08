@@ -224,10 +224,10 @@ contract BurnableToken is StandardToken, Ownable {
     }
 }
 /**
- * @title CALL Token
- * @dev Token representing CALL.
+ * @title CALLG Token
+ * @dev Token representing CALLG.
  */
- contract CALLToken is BurnableToken {
+ contract CALLGToken is BurnableToken {
      string public name;
      string public symbol;
      uint256 public totalSupply;
@@ -245,7 +245,7 @@ contract BurnableToken is StandardToken, Ownable {
      * @param tokenName The name of the token
      * @param tokenSymbol The symboll of the token
      */
-     function CALLToken(uint256 initialSupply, string tokenName, string tokenSymbol) public {
+     function CALLGToken(uint256 initialSupply, string tokenName, string tokenSymbol) public {
          totalSupply = initialSupply.mul( 10 ** uint256(decimals));
          name = tokenName;
          symbol = tokenSymbol;
