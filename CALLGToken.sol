@@ -1,3 +1,6 @@
+/*
+Capital Technologies & Research - CapitalGAS (CALLG) Smart Contract
+*/
 pragma solidity ^0.4.19;
 
 /**

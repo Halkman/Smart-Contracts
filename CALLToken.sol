@@ -1,6 +1,5 @@
 /*
-Capital Technologies & Research - CapitalGAS (CALLG)
-https://mycapitalco.in
+Capital Technologies & Research - Capital (CALL) Smart Contract
 */
 pragma solidity ^0.4.19;
 
