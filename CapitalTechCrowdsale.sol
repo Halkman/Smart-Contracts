@@ -196,7 +196,7 @@ contract CapitalTechCrowdsale is FinalizableCrowdsale {
     return true;
   }
   function goalReached() public view returns (bool) {
-    return token_call.balanceOf(this) <= 47250000000000000000000000;
+    return token_call.balanceOf(this) <= 5250000000000000000000000;
   }
 }
 contract RefundVault is Ownable {
