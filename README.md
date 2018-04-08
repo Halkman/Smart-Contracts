@@ -37,11 +37,11 @@ The price of tokens calculates with the help of a public Fiat Contract.
 
 The crowdsale split as follows:
 
-Presale stage has 15 days, and the price of `1 CALL & 200` CALLG is 1.5$
+Presale stage has 15 days, and the price of `1 CALL & 200 CALLG` is 1.5$
 
-The pre-ico stage has 30 days, and the cost of `1 CALL & 200` CALLG is 2$
+The pre-ico stage has 30 days, and the cost of `1 CALL & 200 CALLG` is 2$
 
-Main sale stage has 30 days, and the price of `1 CALL & 200` CALLG is as following:
+Main sale stage has 30 days, and the price of `1 CALL & 200 CALLG` is as following:
 
 `First week: 3$`
 
