@@ -1,5 +1,5 @@
 /*
-Capital Technologies & Research - Capital GAS (CALLG) Smart Contract
+Capital Technologies & Research - Capital GAS (CALLG)
 */
 pragma solidity ^0.4.19;
 
@@ -224,7 +224,7 @@ contract BurnableToken is StandardToken, Ownable {
     }
 }
 /**
- * @title CALLG Token
+ * @title CAPITAL GAS (CALLG) Token
  * @dev Token representing CALLG.
  */
  contract CALLGToken is BurnableToken {

@@ -1,5 +1,5 @@
 /*
-Capital Technologies & Research - Capital (CALL) Smart Contract
+Capital Technologies & Research - Capital (CALL)
 */
 pragma solidity ^0.4.19;
 
@@ -224,7 +224,7 @@ contract BurnableToken is StandardToken, Ownable {
     }
 }
 /**
- * @title CALL Token
+ * @title CAPITAL (CALL) Token
  * @dev Token representing CALL.
  */
  contract CALLToken is BurnableToken {

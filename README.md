@@ -7,7 +7,7 @@ This repository contains Solidity smart contract codes. The repo currently imple
 # Main Network Details
 
 # CAPITAL (CALL)
-## Token Address : 0xa31acff930ad8eed2192fa1c82c92b717ab10ba8
+## Token Address : 0xaa9695bdacc70dc849e3d96769649e9eb349ced5
 ## Token Name: CAPITAL
 ## Token Symbol: CALL
 ## Token Decimals: 18
@@ -354,7 +354,7 @@ This repository contains Solidity smart contract codes. The repo currently imple
 ]
 ```
 # CAPITAL GAS (CALLG)
-## Token Address: 0x48546427eb8f1fbe9cb4c92ad8fbd88e70ed8dfe
+## Token Address: 0x53c3818f9b12c1a2ac86beaaa4d43b414e9a5682
 ## Token Name: CAPITAL GAS
 ## Token Symbol: CALLG
 ## Token Decimals: 18
@@ -701,9 +701,9 @@ This repository contains Solidity smart contract codes. The repo currently imple
 ]
 ```
 # Crowdsale Contract
-## Contract Address : 0xa9979471b5175522ab2e77d4f893bdc8fc649dad
+## Contract Address : 0x75fcb62bc45acdb14cf2f37a2bdd30184249a1eb
 ## Minimum investment : 0.01 Ethereum
-## Maximum investment : 1500 Ethereum
+## Maximum investment per address : 1500 Ethereum
 ## JSON ABI
 ```
 [
@@ -747,35 +747,6 @@ This repository contains Solidity smart contract codes. The repo currently imple
 		"payable": true,
 		"stateMutability": "payable",
 		"type": "function"
-	},
-	{
-		"anonymous": false,
-		"inputs": [
-			{
-				"indexed": true,
-				"name": "previousOwner",
-				"type": "address"
-			},
-			{
-				"indexed": true,
-				"name": "newOwner",
-				"type": "address"
-			}
-		],
-		"name": "OwnershipTransferred",
-		"type": "event"
-	},
-	{
-		"anonymous": false,
-		"inputs": [],
-		"name": "Finalized",
-		"type": "event"
-	},
-	{
-		"anonymous": false,
-		"inputs": [],
-		"name": "BurnedUnsold",
-		"type": "event"
 	},
 	{
 		"constant": false,
@@ -837,6 +808,12 @@ This repository contains Solidity smart contract codes. The repo currently imple
 		"type": "function"
 	},
 	{
+		"anonymous": false,
+		"inputs": [],
+		"name": "Finalized",
+		"type": "event"
+	},
+	{
 		"constant": false,
 		"inputs": [],
 		"name": "withdrawFunds",
@@ -844,6 +821,29 @@ This repository contains Solidity smart contract codes. The repo currently imple
 		"payable": false,
 		"stateMutability": "nonpayable",
 		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [],
+		"name": "BurnedUnsold",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "previousOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnershipTransferred",
+		"type": "event"
 	},
 	{
 		"payable": true,
@@ -1022,6 +1022,20 @@ This repository contains Solidity smart contract codes. The repo currently imple
 			{
 				"name": "",
 				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "stage",
+		"outputs": [
+			{
+				"name": "",
+				"type": "string"
 			}
 		],
 		"payable": false,
